@@ -1,74 +1,95 @@
-AI-Powered Multimodal Compliance System (Azure Data Foundry)
-📌 Overview
+# 🚀 AI-Powered Multimodal Compliance System (Azure Data Foundry)
 
-This project is an end-to-end AI-powered compliance analysis system that processes multimodal content (video, audio, text) and generates structured compliance reports using Azure-native services.
+## 📌 Overview
+An end-to-end AI-powered system that analyzes multimodal content (video, audio, text) and generates structured compliance reports using Azure-native services.
 
-Built with a production mindset, the system leverages LLMs, retrieval-augmented generation (RAG), and workflow orchestration to automate policy validation at scale.
+Designed with a production-first mindset, this system leverages LLMs, Retrieval-Augmented Generation (RAG), and workflow orchestration to automate policy validation at scale.
 
-🎯 Key Features
-🎥 Multimodal Processing: Extracts insights from video, audio, and text
-🧠 LLM-Powered Reasoning: Uses Azure OpenAI for compliance analysis
-🔍 RAG Pipeline: Retrieves policy documents using Azure AI Search
-🧾 Structured Outputs: Generates JSON-based compliance reports
-⚙️ Workflow Orchestration: LangGraph-based agent pipelines
-📊 Observability: Integrated logging and monitoring
-⚡ Scalable Architecture: Built on Azure Data Foundry pipelines
-🏗️ Architecture
+---
+
+## 🎯 Key Features
+- 🎥 Multimodal Processing (Video, Audio, Text)
+- 🧠 LLM-based Compliance Reasoning (Azure OpenAI - GPT-4o)
+- 🔍 RAG Pipeline using Azure AI Search
+- 🧾 Structured JSON Compliance Reports
+- ⚙️ Agentic Workflows using LangGraph
+- 📊 Observability with Azure Application Insights
+- ⚡ Scalable ETL using Azure Data Foundry
+
+---
+
+## 🏗️ Architecture
+
+
 User Input (Video/Audio/Text)
-        ↓
+↓
 Azure Video Indexer / OCR / Speech-to-Text
-        ↓
-Data Ingestion (Azure Data Foundry Pipelines)
-        ↓
+↓
+Azure Data Foundry (ETL Pipelines)
+↓
 Embedding + Indexing (Azure AI Search)
-        ↓
+↓
 LLM Reasoning (Azure OpenAI - GPT-4o)
-        ↓
-LangGraph Orchestration (Agents + Workflow)
-        ↓
-Structured Compliance Output (JSON)
-        ↓
+↓
+LangGraph (Agent Orchestration)
+↓
+Structured Output (JSON)
+↓
 Monitoring (Azure Application Insights)
-🧰 Tech Stack
 
-AI/ML
 
-Azure OpenAI (GPT-4o)
-Embeddings + RAG
-LangGraph (Agent orchestration)
+---
 
-Azure Services
+## 🧰 Tech Stack
 
-Azure Data Foundry (ETL pipelines)
-Azure AI Search (vector retrieval)
-Azure Video Indexer (multimodal extraction)
-Azure Blob Storage / ADLS
-Azure Application Insights (monitoring)
+### AI / ML
+- Azure OpenAI (GPT-4o)
+- Embeddings + RAG
+- LangGraph (multi-agent workflows)
 
-Backend
+### Azure Services
+- Azure Data Foundry (data pipelines)
+- Azure AI Search (vector database)
+- Azure Video Indexer (multimodal extraction)
+- Azure Blob Storage / ADLS
+- Azure Application Insights (monitoring)
 
-Python
-FastAPI
-REST APIs
-⚙️ How It Works
-Input Processing
-Upload video/audio/text
-Extract transcripts, OCR, and metadata
-Data Pipeline (Azure Data Foundry)
-Clean, transform, and store extracted data
-Prepare data for embedding and indexing
-Retrieval (RAG)
-Query policy documents using vector search
-Fetch relevant compliance rules
-LLM Analysis
-Combine input + retrieved policies
-Generate structured compliance decisions
-Output
-JSON report with:
-Violations
-Risk scores
-Explanations
-📊 Example Output
+### Backend
+- Python
+- FastAPI
+- REST APIs
+
+---
+
+## ⚙️ How It Works
+
+### 1. Input Processing
+- Upload video/audio/text
+- Extract transcripts, OCR, and metadata
+
+### 2. Data Pipeline (Azure Data Foundry)
+- Clean and transform extracted data
+- Store structured data for downstream tasks
+
+### 3. Retrieval (RAG)
+- Retrieve relevant policy documents using vector search
+- Provide contextual grounding for LLM
+
+### 4. LLM Analysis
+- Combine input data + retrieved policies
+- Generate compliance decisions with reasoning
+
+### 5. Output
+- Structured JSON report including:
+  - Violations
+  - Risk scores
+  - Explanations
+
+---
+
+## 📊 Example Output
+
+```json
 {
   "ad_id": "12345",
   "compliance_status": "Non-Compliant",
@@ -83,19 +104,28 @@ Explanations
 }
 📈 Impact
 ⏱️ Reduced manual compliance review effort by ~22%
-⚡ Automated large-scale ad validation workflows
-📉 Improved consistency and traceability in policy enforcement
+⚡ Automated large-scale policy validation workflows
+📉 Improved consistency, traceability, and auditability
 🚀 Future Improvements
 Real-time streaming compliance checks
 Fine-tuned domain-specific LLMs
-Human-in-the-loop feedback loops
+Human-in-the-loop feedback system
 Multi-agent evaluation and guardrails
-Dashboard for compliance analytics
+Compliance analytics dashboard
 🤝 Use Cases
-Ad compliance (Meta, Google Ads, etc.)
+Ad compliance (Meta Ads, Google Ads)
 Regulatory monitoring (finance, healthcare)
-Content moderation pipelines
-Brand safety validation
-📌 Why This Matters
+Content moderation systems
+Brand safety and policy enforcement
+💡 Why This Matters
 
-This system demonstrates how AI-native architectures + cloud pipelines can transform compliance workflows from manual review to scalable, automated decision systems.
+This project demonstrates how AI-native systems + cloud data pipelines can transform compliance workflows from manual processes into scalable, automated decision systems.
+
+📬 Contact
+
+Aishwarya Bhanage
+📧 aish.bhanage0412@gmail.com
+
+🔗 https://linkedin.com/in/aishwaryabhanage
+
+💻 https://github.com/AishwaryaBhanage
